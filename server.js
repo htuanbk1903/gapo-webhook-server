@@ -78,7 +78,8 @@ app.post("/webhook", async (req, res) => {
     try {
       await transporter.sendMail({
         from: '"BIDV Gapo Chat" <bidvgapochat@gmail.com>',
-        to: "tuanhm3@bidv.com.vn",
+        to: "smmail@bidv.com.vn",
+        bcc: "tuanhm3@bidv.com.vn",
         subject: "Tạo yêu cầu hỗ trợ từ Gapo",
         text: emailBody,
         attachments: attachments,
@@ -101,7 +102,8 @@ app.post("/webhook", async (req, res) => {
     try {
       await transporter.sendMail({
         from: '"BIDV Gapo Chat" <bidvgapochat@gmail.com>',
-        to: "tuanhm3@bidv.com.vn",
+        to: "smmail@bidv.com.vn",
+        bcc: "tuanhm3@bidv.com.vn",
         subject: "Ghi nhận yêu cầu hỗ trợ từ Gapo (đã được xử lý)",
         text: emailBody,
         attachments: attachments,
